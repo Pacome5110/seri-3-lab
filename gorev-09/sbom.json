@@ -1,0 +1,29 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.4b",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:3e671687-395b-41f5-a30f-a58921a69b79",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-11-20T12:00:00Z",
+    "component": {
+      "type": "application",
+      "name": "campus-connect-api",
+      "version": "1.0.0"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "express",
+      "version": "4.18.2",
+      "purl": "pkg:npm/express@4.18.2"
+    },
+    {
+      "type": "library",
+      "name": "jsonwebtoken",
+      "version": "8.5.1",
+      "purl": "pkg:npm/jsonwebtoken@8.5.1"
+    }
+  ]
+}

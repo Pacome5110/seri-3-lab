@@ -1,0 +1,15 @@
+name: Semgrep SAST
+on:
+  pull_request: {}
+  push:
+    branches: ["main", "master", "seri-3-lab"]
+
+jobs:
+  semgrep:
+    name: Scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: returntocorp/semgrep-action@v1
+        with:
+          config: "p/default"
