@@ -1,7 +1,7 @@
 # Seri 3 — Web Güvenliği Lab
 
-**Öğrenci:** [Ad Soyad]  
-**Okul No:** [Okul No]  
+**Öğrenci:PACOME BERINYUY FONDZENYUY  
+**Okul No:24080410151  
 **Seri:** 3 | **Hafta:** 9  
 
 ---
