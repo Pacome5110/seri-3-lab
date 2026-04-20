@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Para Transferi</title>
+</head>
+<body>
+    <h2>Merhaba, <%= user.name %>!</h2>
+    <p>Bakiyeniz: <%= user.balance %> TL</p>
+    
+    <form action="/transfer" method="POST">
+        <!-- Güvenlik: CSRF Token gizli bir input olarak gönderiliyor -->
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+        
+        <label>Alıcı Hesap No:</label>
+        <input type="text" name="to" required><br><br>
+        
+        <label>Miktar (TL):</label>
+        <input type="number" name="amount" required><br><br>
+        
+        <button type="submit">Gönder</button>
+    </form>
+</body>
+</html>
